@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Input Clear Icon</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <input class="clearable" type="text" name="" value="" placeholder="" />
+
+        <script>
+            function tog(v){ return v ? 'addClass' : 'removeClass'; } 
+            
+            $(document).on('input', '.clearable', function(){
+                $(this)[tog(this.value)]('x');
+            }).on('mousemove', '.x', function( e ){
+                $(this)[tog(this.offsetWidth-18 < e.clientX-this.getBoundingClientRect().left)]('onX');
+            }).on('touchstart click', '.onX', function( ev ){
+                ev.preventDefault();
+                $(this).removeClass('x onX').val('').change();
+            });
+        </script>
+    </body>
+</html>
