@@ -1,0 +1,22 @@
+nav li {
+  display:inline-block;
+  /* transition: background 0.2s; */
+  transform: skew(20deg);  /* SKEW */
+}
+
+nav li a {
+  display:block;
+  text-decoration:none;
+  padding:5px 10px;
+  font-size:30px;
+  transform: skew(-20deg); /* INVERSE SKEW */
+  color: black;
+}
+
+nav li:hover{
+  background:black;
+}
+
+nav li:hover a{
+  color:white;
+}

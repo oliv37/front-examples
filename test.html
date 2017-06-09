@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            p {
+                background-color:rgba(255,0,0,0.5);
+            }
+
+            span {
+                color: white;
+            }
+
+            #some_div {
+                width: 250px;
+                height: 165px;
+                background-image: url(http://artefrance-webmag.arte.tv/webmag/event/6512-v8.jpg);
+                background-repeat: no-repeat;
+                -webkit-transition:background-image 0.5s;
+                /* Other vendor-prefixed transition properties */
+                transition:background-image 0.5s;
+            }
+
+            #some_div:hover {
+                background-image: url(http://artefrance-webmag.arte.tv/webmag/event/6503-v6.jpg);
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            <span>Hello world</span>
+        </p>
+
+        <div id="some_div"></div>
+    </body>
+</html>
