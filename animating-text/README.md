@@ -1,0 +1,1 @@
+## Display Animated Text (fake typing text)

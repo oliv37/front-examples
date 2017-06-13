@@ -7,3 +7,7 @@
 [Custom Radio Button / Checkbox](custom-radio-checkbox)
 
 [Menu With Skew Transformation](menu-skew)
+
+[Fake Typing Text](animating-text)
+
+[Input Text with floating label](input-text-floating-label)
