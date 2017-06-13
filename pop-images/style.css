@@ -1,0 +1,22 @@
+#images{
+    padding:30px;
+}
+
+#images img{
+    /* position:relative; */
+    /* float:left; */
+    height:100px;
+    margin:5px;
+    transition:0.3s;
+    box-shadow: 0 0 0 10px #fff;
+}
+
+#images img:hover{
+    z-index:2;
+    transform: scale(1.2);
+    /* scale doesn't affect other elements, they stay where they got rendered - around the original element */
+}
+
+#images img:hover:after{
+    content: attr(title);
+}
