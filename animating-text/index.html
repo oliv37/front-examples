@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <span class="typer" data-text="Hi! My name is Al. I will guide you trough the Setup process."></span>
+
+        <script>
+            var $typer = document.getElementsByClassName('typer')[0],
+                txt = $typer.getAttribute('data-text'),
+                tot = txt.length,
+                ch  = 0;
+
+            (function typeIt() {   
+                if(ch > tot) return;
+                $typer.innerText = txt.substring(0, ch++);
+                setTimeout(typeIt, Math.floor(Math.random()*241+60));
+            }());
+        </script> 
+    </body>
+</html>
