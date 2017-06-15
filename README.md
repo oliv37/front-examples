@@ -11,3 +11,5 @@
 [Fake Typing Text](animating-text)
 
 [Input Text with floating label](input-text-floating-label)
+
+[Modal Dialog](modal)
