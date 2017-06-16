@@ -13,3 +13,5 @@
 [Input Text with floating label](input-text-floating-label)
 
 [Modal Dialog](modal)
+
+[Parallax Effect](parallax)
