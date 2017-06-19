@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="infinite-scroll.js"></script>
+    </head>
+    <body>
+        <div id="main"></div>
+
+        <script>
+            (function() {
+                var cpt = 0;
+                var mainDiv = document.getElementById("main");
+
+                function loadItems(done) {
+                    if (cpt >= 200) return done();
+
+                    setTimeout(function() {
+                        for (var i = 0; i < 20; i++, cpt++) mainDiv.innerHTML += "<div>" + cpt + "</div>";
+                        done();
+                    }, 200 + (Math.random() * 500));
+                }
+
+                function loadMoreItems() {
+                    loadItems(function() {
+                        var vScrollBarVisible = document.body.offsetHeight > window.innerHeight;
+                        if (!vScrollBarVisible) loadMoreItems();
+                    });
+                }
+
+                loadMoreItems();
+                infiniteScroll({ cb: loadItems, distance: 200 });
+            })();
+        </script>
+
+    </body>
+</html>
