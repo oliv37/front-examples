@@ -15,3 +15,5 @@
 [Modal Dialog](modal)
 
 [Parallax Effect](parallax)
+
+[Fancy Arrow](fancy-arrow)
