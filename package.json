@@ -4,10 +4,24 @@
   "description": "series of front examples",
   "main": "index.js",
   "devDependencies": {
-    "lite-server": "^2.3.0"
+    "connect": "^3.6.2",
+    "gulp": "^3.9.1",
+    "jasmine": "^2.6.0",
+    "jasmine-core": "^2.6.4",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.0.1",
+    "karma-jasmine": "^1.1.0",
+    "lite-server": "^2.3.0",
+    "serve-static": "^1.12.3",
+    "wdio-mocha-framework": "^0.5.10",
+    "wdio-phantomjs-service": "^0.2.2",
+    "webdriverio": "^4.8.0"
   },
   "scripts": {
     "start": "lite-server",
+    "karma": "karma start karma/my.conf.js",
+    "wdio": "gulp test",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
