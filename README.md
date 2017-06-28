@@ -17,3 +17,5 @@
 [Parallax Effect](parallax)
 
 [Fancy Arrow](fancy-arrow)
+
+[Arc Circle](arc-circle)

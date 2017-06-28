@@ -1,0 +1,52 @@
+.wrapper {
+    position: relative;
+    margin: 40px auto;
+    background: white;
+}
+
+.wrapper, .wrapper * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100px;
+    height: 100px;
+}
+
+.wrapper .pie {
+    width: 50%;
+    height: 100%;
+    transform-origin: 100% 50%;
+    position: absolute;
+    background: #FFF;
+    border: 5px solid rgba(0,0,0,0.5);
+}
+
+.wrapper .spinner {
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    z-index: 200;
+    border-right: none;
+}
+
+.wrapper .filler {
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+    left: 50%;
+    opacity: 1;
+    z-index: 100;
+    border-left: none;
+    border-color: rgba(0,0,0,0.1);
+}
+
+.wrapper .mask {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    opacity: 1;
+    z-index: 300;
+    border: 5px solid rgba(0,0,0,0.1);
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    border-right: none;
+}
